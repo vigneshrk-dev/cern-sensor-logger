@@ -1,9 +1,7 @@
 # Real-Time Telemetry & Data Acquisition (DAQ) Pipeline
 
-A high-performance, cross-platform systems engineering project demonstrating a low-level data acquisition daemon written in **C**, paired with an automated telemetry analytics pipeline written in **Python**. 
 ---
 
-## System Architecture & Workflow
 
 A high-performance, cross-platform systems engineering project demonstrating a low-level data acquisition daemon written in **C**, paired with an automated telemetry analytics pipeline written in **Python**.
 
@@ -11,7 +9,6 @@ Designed to showcase low-level resource management, real-time signal handling, d
 
 ---
 
-## System Architecture & Workflow
 ## Core Components
 
 - **C Data Acquisition Daemon (`c_src/main.c`)**: 
@@ -25,18 +22,6 @@ Designed to showcase low-level resource management, real-time signal handling, d
 
 ## Getting Started
 
-```text
- [ C Daemon (Sensor Stream) ] 
-       │
-       ├── Configurable Polling Interval (argc/argv)
-       ├── Immediate Buffer Flushing (fflush)
-       └── Graceful Shutdown Intercept (SIGINT / Ctrl+C)
-       │
-       ▼
-  sensor_log.csv ────────► [ Python Analytics Consumer ] ──► Aggregated Statistical Report & Status Breakdown
-
-  
-  
 1. **Build the C Daemon**:
    ```bash
    gcc c_src/main.c -o sensor_logger.exe
