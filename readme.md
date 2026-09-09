@@ -17,5 +17,6 @@ Designed to showcase low-level resource management, real-time signal handling, d
        │
        ▼
   sensor_log.csv ────────► [ Python Analytics Consumer ] ──► Aggregated Statistical Report & Status Breakdown
+
   
   
